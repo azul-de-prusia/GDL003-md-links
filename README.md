@@ -18,7 +18,9 @@
   `mdLinks()`. Tests the implementation must pass.
 
 This is the flowchart made for the fisrt iteration od this project, in which you can see the processes to get to the final solution.
-![alt text](https://i.ibb.co/MBk8DZt/Proceso-de-soporte-t-cnico.png =500x)
+![alt text](https://i.ibb.co/MBk8DZt/Proceso-de-soporte-t-cnico.png)
+
+<img src="https://i.ibb.co/MBk8DZt/Proceso-de-soporte-t-cnico.png" width="100%">
 
 
 ## General considerations
