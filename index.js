@@ -3,8 +3,8 @@ const path = require('path');
 //const node fetch?
 //const chalk = require('chalk');
 //const filehound = require('filehound');
-//const marked = require('marked');
-//const cheerio = require ('cheerio');
+//const markdownIt = require('markdownIt');
+
 
 
 
