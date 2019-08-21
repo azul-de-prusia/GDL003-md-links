@@ -3,8 +3,7 @@
  This is a npm library that does analyze the URL´s on your markdown files (.md extension) searching for those that still works and the ones that are already broken :( so you can keep them updated. At the end you´ll get a list and stats of the URL´s working and broken whitin the md file given. 
  The first thing to do it is to install de library on your CLI, by writing "npm markdownlinks install". It´s up to you to install it on a project or globaly.
 
-![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiiF8yedtVy79iUGoUbCYWNFPn26BmUqHKwPbBVvVit2quaU_ =500x)
-
+![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiiF8yedtVy79iUGoUbCYWNFPn26BmUqHKwPbBVvVit2quaU_)
 
 
 ### In this project you will find the next files:
@@ -19,7 +18,7 @@
   `mdLinks()`. Tests the implementation must pass.
 
 This is the flowchart made for the fisrt iteration od this project, in which you can see the processes to get to the final solution.
-![alt text](https://i.ibb.co/MBk8DZt/Proceso-de-soporte-t-cnico.png)
+![alt text](https://i.ibb.co/MBk8DZt/Proceso-de-soporte-t-cnico.png =500x)
 
 
 ## General considerations
