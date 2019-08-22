@@ -1,12 +1,10 @@
 # Markdown Links
 
  This is a npm library that does analyze the URL´s on your markdown files (.md extension) searching for those that still works and the ones that are already broken :( so you can keep them updated. At the end you´ll get a list and stats of the URL´s working and broken whitin the md file given. 
- The first thing to do it is to install de library on your CLI, by writing "npm markdownlinks install". It´s up to you to install it on a project or globaly.
+ The first thing to do it is to install de library on your CLI, by writing `npm install <azul-de-prusia>/md-links`. It´s up to you to install it on a project or globally.
 <p align="center">
- 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiiF8yedtVy79iUGoUbCYWNFPn26BmUqHKwPbBVvVit2quaU_" title="Broken URL." width="500" height="500">
 <div align="center"></div>
- 
 </p>
 
 ### In this project you will find the next files:
@@ -16,7 +14,7 @@
 - `package.json` Contains informaton about author, version, license, dependencies, tests and pretest.
 - `.editorconfig` Text editor settings.
 - `.eslintrc` Linter settings.
-- `.gitignore` To ignore `node_modules` or other files that shouln´t get include on the versions control (`git`).
+- `.gitignore` To ignore `node_modules` or other files that shouldn´t get include on the versions control (`git`).
 - `test/md-links.spec.js` It contains functionality tests.
   `mdLinks()`. Tests the implementation must pass.
 
@@ -25,23 +23,33 @@ This is the flowchart made for the fisrt iteration od this project, in which you
 <img src="https://i.ibb.co/LNdQzYc/Proceso-de-soporte-t-cnico.png" width="100%">
 
 
-## General considerations
+## General considerations:
 
-This project was developed individually by Tegthyn Coral Quiñones Gutiérrez.
+This project was developed by Tegthyn Coral Quiñones Gutiérrez.
 
 The library it´s implemented in JavaScript to be executed with
 Node.js. ** It uses external libraries **.
 
+## Dependencies:
+
+Node file system
+Node path
+Elintr
+Jest
+Prettier
+Chalk
+Filehound
+Markdown it
 
 ## Checklist
 
 ### General
 
-- [ ] Can be installed by `npm install --global <github-user>/md-links`
+- [ ] Can be installed by `npm install --global <azul-de-prusia>/md-links`
 
 ### `README.md`
 
-- [ ] Contains the flowcahrt that resolves the problem.
+- [ ] Contains the flowchart that resolves the problem.
 - [ ] A board with the backlog for the library implementation.
 - [ ] Technical documentation about the library.
 - [ ] Instalation and use guide of the library.
