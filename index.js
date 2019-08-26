@@ -3,9 +3,10 @@ const path = require('path');
 //const node fetch?
 //const chalk = require('chalk');
 //const filehound = require('filehound');
+const request = require('request');
 const marked = require('marked');
-const cheerio = require('cheerio')
-
+const cheerio = require('cheerio');
+let keywords = "http";
 
 
 
@@ -20,22 +21,38 @@ if (path.extname(filePath)==='.md'){
   console.log('This is not an .md file D:')
   return false;
 }
-
- //ternario, síntesis del if anterior
- //return path.extname(filePath)==='.md' ? true : false;
 };
-
-// console.log(itIsMd(process.argv[2]));
-console.log(itIsMd("./README.md"));
+console.log(itIsMd(process.argv[2]));
+//console.log(itIsMd("./README.md"));
 
 
 //reads the .md file
-fs.readFile('README.md', 'utf8', (error, data) => {
+fs.readFile((process.argv[2]), 'utf8', (error, data) => {
   if (error) throw error;
-  console.log(data);
-});
+  let keywords = "http";
+  let position = data.indexOf(keywords);
+  console.log(position);
+ 
+  // -1 means there was no urls found
+  while (position >= 0)
+  {
+      // remplaza "ato" por "atito"
+      data = data.slice(0, position) + " " + data.slice(position + 3);
+      // search for the next word match
+      position = data.indexOf(keywords);
+ 
+      request(keywords,  (error, response, body)=> {
+          if (error){
+                console.log("URL broken");}
+          else{
+                console.log("valid URL");}
+      });
+      console.log(position);
+  }
 
-//parses .md file to html
+
+});
+/*parses .md file to html
 marked.setOptions({
   highlight: function(code, lang, callback) {
     require('pygmentize-bundled') ({ lang: lang, format: 'html' }, code, function (error, result) {
@@ -43,34 +60,9 @@ marked.setOptions({
     });
   }
 });
-
 console.log(marked(markdownString));
-/*reads the .md file
-fs.readFile('README.md', 'utf8', (err, data) => {
-  if (err) throw err;
-  let keywords = "http"
-  let posicion = data.indexOf(keywords);
-  console.log(posicion)
-  // y mientras tengas una posición mayor o igual que 0,
-  // (recuerda que -1 significa que no lo encontró)
-  while (posicion >= 0)
-  {
-      // remplaza "ato" por "atito"
-      data = data.slice(0, posicion) + " " + data.slice(posicion + 3);
-      // busca la siguiente ocurrencia de la palabra
-      posicion = data.indexOf(keywords);
- 
-      request(keywords,  (error, response, body)=> {
-          if (error){
-                console.log("mal")
-          }
-else{
-  console.log("url funciona bien")
-}
-      });
-      console.log(posicion);
-  }
-});*/
+*/
+
 
 findUrls = () => {
 
