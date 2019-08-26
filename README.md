@@ -3,7 +3,7 @@
  This is a npm library that does analyze the URL´s on your markdown files (.md extension) searching for those that still works and the ones that are already broken :( so you can keep them updated. At the end you´ll get a list and stats of the URL´s working and broken whitin the md file given. 
  The first thing to do it is to install de library on your CLI, by writing `npm install <azul-de-prusia>/md-links`. It´s up to you to install it on a project or globally.
 <p align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiiF8yedtVy79iUGoUbCYWNFPn26BmUqHKwPbBVvVit2quaU_" title="Broken URL." width="500" height="500">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiiF8yedtVy79iUGoUbCYWNFPn26BmUqHKwPbBVvVit2quaU_" title="Broken URL." width="400" height="400">
 <div align="center"></div>
 </p>
 
@@ -30,6 +30,12 @@ This project was developed by Tegthyn Coral Quiñones Gutiérrez.
 The library it´s implemented in JavaScript to be executed with
 Node.js. ** It uses external libraries **.
 
+The module is installable via npm install <github-azul-de-prusia> / md-links. This module include both an executable that we can invoke on the command line and an interface that we can import with require to use it programmatically.
+
+Unit tests must cover a minimum of 70% of statements, functions, lines and branches.
+
+Github project boards were used to organize and prioritize the development of this library.
+
 ## Dependencies:
 
 Node file system
@@ -39,7 +45,8 @@ Jest
 Prettier
 Chalk
 Filehound
-Markdown it
+Marked
+Cheerio
 
 ## Checklist
 
