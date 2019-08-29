@@ -1,48 +1,65 @@
 const fs = require('fs');
 const path = require('path');
 //const node fetch?
-//const chalk = require('chalk');
+const chalk = require('chalk');
 //const filehound = require('filehound');
 const request = require('request');
 const marked = require('marked');
 const cheerio = require('cheerio');
-const keywords = "http";
+//const keywords = "http";
 
 
 
-
-//file extension
+//---------Validates if the file extension is = .md
 //module.exports = (filePath) => {
 const itIsMd = (filePath) => {
 if (path.extname(filePath)==='.md'){
-  console.log('✓ It is an .md file')
-  return true;
+  console.log(chalk.bgMagenta.bold('✓ It is an .md file'));
+ // log(chalk.blue.bgRed.bold('Hello world!'));
+ return true; 
 } else {
-  console.log('This is not an .md file D:')
+  console.log(chalk.bgCyan.bold('This is not an .md file D:'));
   return false;
 }
 };
 console.log(itIsMd(process.argv[2]));
-//console.log(itIsMd("./README.md"));
 
 
-//Reads the .md file
+
+//---------Reads the .md file
+const readFile = (path) =>{
 fs.readFile((process.argv[2]), 'utf8', (error, data) => {
   if (error) throw error;
   console.log(data);
   parseMdToHtml(data);
 });
+};
+readFile(path);
 
-//Parses .md file to html
+
+
+//---------Parses .md file to html
   const parseMdToHtml = (htmlData) =>{
-  console.log(marked(htmlData));
+  let htmlTags = marked(htmlData);
+    console.log(htmlTags);
+ findUrls(htmlTags); 
 } 
 
-/*Finds url´s within the html file 
-const findHref = cheerio.load('<a href>...</a>');
-console.log(findHref);
 
-/*var request = require('request');
+
+//--------Finds url´s within the html file 
+const findUrls = (htmlA) =>{
+  $ = cheerio.load (htmlA);
+  let links = [];
+  $ ('a').each((i, element)=>{
+    links[i] = $(element).attr("href");
+  })
+  console.log (links , links.length);
+};
+
+/*
+//validateUrls(links);
+const validateUrls = require('request');
 request(htmlLinks[i].href, (error, response, body)=> {
      if (error){
           console.log("URL broken")
@@ -80,21 +97,21 @@ fs.readFile((process.argv[2]), 'utf8', (error, data) => {
 });
 */
 
-findUrls = () => {
-
-};
-
-
-countUrls = () => {
-
-};
-
 
 validateUrls = () => {
-
+  console.log("validate")
 };
 
 
 printUrlStats = () => {
+  console.log("print")
+};
 
+module.exports ={
+  itIsMd: itIsMd,
+  readFile: readFile,
+  parseMdToHtml: parseMdToHtml,
+  findUrls: findUrls,
+  validateUrls: validateUrls,
+  printUrlStats: printUrlStats
 };

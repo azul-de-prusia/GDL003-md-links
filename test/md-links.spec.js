@@ -1,14 +1,23 @@
-const mdLinks = require('../');
+/*require('../index.js');
+const itIsMd =require("../index.js");
+//const { validateLinks } = require("");
 
+describe('itIsMd', () => {
 
-describe('mdLinks', () => {
+  it('is a function', () => {
+    expect(typeof itIsMd).toBe('function');
+    console.log('itIsMd is a function');
+  });
 
   it('should return true for a valid .md file', () => {
-    expect(mdLinks('.../README.md')).toBe(true);
+    expect(mdLinks.itIsMd('.../README.md')).toBe(true);
+    console.log('Validate md file');
   });
 
   it('should return true for an invalid .md file', () => {
-    expect(mdLinks('.../index.js')).toBe(false);
+    expect(mdLinks.itIsMd('.../index.js')).toBe(false);
+    console.log('Invalid .md file');
   });
 
-});
+});*/
+

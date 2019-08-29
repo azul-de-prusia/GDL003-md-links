@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/azul-de-prusia/GDL003-md-links#readme",
   "devDependencies": {
+    "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.3",
     "eslint": "^6.2.0",
     "marked": "^0.7.0",
