@@ -6,8 +6,8 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiiF8yedtVy79iUGoUbCYWNFPn26BmUqHKwPbBVvVit2quaU_" title="Broken URL." width="300" height="300">
 <div align="center"></div>
 </p>
-<p align="left"><img src="https://httpstatusdogs.com/img/200.jpg" width="50%"></p>
-<p align="right"><img src="https://httpstatusdogs.com/img/402.jpg" width="50%"></p>
+<img src="https://httpstatusdogs.com/img/200.jpg" width="45%">
+<img src="https://httpstatusdogs.com/img/402.jpg" width="45%">
 <img src="https://httpstatusdogs.com/img/404.jpg" width="50%">
 <img src="https://httpstatusdogs.com/img/423.jpg" width="50%">
 
