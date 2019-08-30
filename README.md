@@ -3,9 +3,14 @@
  This is a npm library that does analyze the URL´s on your markdown files (.md extension) searching for those that still works and the ones that are already broken :( so you can keep them updated. At the end you´ll get a list and stats of the URL´s working and broken whitin the md file given. 
  The first thing to do it is to install de library on your CLI, by writing `npm install <azul-de-prusia>/md-links`. It´s up to you to install it on a project or globally.
 <p align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiiF8yedtVy79iUGoUbCYWNFPn26BmUqHKwPbBVvVit2quaU_" title="Broken URL." width="400" height="400">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiiF8yedtVy79iUGoUbCYWNFPn26BmUqHKwPbBVvVit2quaU_" title="Broken URL." width="300" height="300">
 <div align="center"></div>
 </p>
+
+<img src="https://httpstatusdogs.com/img/200.jpg" width="50%">
+<img src="https://httpstatusdogs.com/img/402.jpg" width="50%">
+<img src="https://httpstatusdogs.com/img/404.jpg" width="50%">
+<img src="https://httpstatusdogs.com/img/423.jpg" width="50%">
 
 ### In this project you will find the next files:
 
@@ -38,7 +43,7 @@ Github project boards were used to organize and prioritize the development of th
 
 This library runs by writting on the CLI:   
 node index yourfile.md  
-It will show you a validation for the .md type of file, followed by the links found on your file, each one with the valid URL or URL broken, and the total amount of them. 
+It will show you a validation for the .md type of file, followed by the links found on your file, and the "valid URL" or "URL broken", in the same order than links appear and the URL´s total. 
 
 ## Dependencies:
 

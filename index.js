@@ -26,7 +26,7 @@ console.log(itIsMd(process.argv[2]));
 const readFile = (path) =>{
 fs.readFile((process.argv[2]), 'utf8', (error, data) => {
   if (error) throw error;
-  console.log(data);
+  //console.log(data);
   parseMdToHtml(data);
 });
 };
@@ -57,7 +57,7 @@ const findUrls = (htmlA) =>{
  
     })
   })
-
+  console.log (links);
   console.log("There are " + links.length + " links found");
 };
 
