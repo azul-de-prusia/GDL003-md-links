@@ -97,3 +97,6 @@ $ md-links ./some/example.md --validate
 ./some/example.md https://otra-cosa.net/algun-doc.html fail 404 algún doc
 ./some/example.md http://google.com/ ok 301 Google
 ```
+https://www.facebook.com/
+https://i.ibb.co/LNdQzYc/Proceso-de-soporte-t-cnico.png
+http://google.co/
