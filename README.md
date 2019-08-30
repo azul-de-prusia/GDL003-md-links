@@ -1,17 +1,11 @@
 # Markdown Links
 
-<img src="https://httpstatusdogs.com/img/200.jpg" width="50%">
+<img src="https://httpstatusdogs.com/img/200.jpg" width="45%">
 
  This is a npm library that does analyze the URL´s on your markdown files (.md extension) searching for those that still works and the ones that are already broken :( so you can keep them updated. At the end you´ll get a list and stats of the URL´s working and broken whitin the md file given. 
  The first thing to do it is to install de library on your CLI, by writing `npm install <azul-de-prusia>/md-links`. It´s up to you to install it on a project or globally.
-<p align="center">
-<img src="https://httpstatusdogs.com/img/404.jpg" width="50%">
-<div align="center"></div>
-</p>
 
-
-
-
+<img src="https://httpstatusdogs.com/img/404.jpg" width="45%">
 
 ### In this project you will find the next files:
 
@@ -24,7 +18,7 @@
 - `test/md-links.spec.js` It contains functionality tests.
   `mdLinks()`. Tests the implementation must pass.  
   
-  <img src="https://httpstatusdogs.com/img/402.jpg" width="50%">
+  <img src="https://httpstatusdogs.com/img/402.jpg" width="45%">
 
 This is the flowchart made for the fisrt iteration od this project, in which you can see the processes to get to the final solution.
 
@@ -60,7 +54,7 @@ Marked
 Cheerio  
 Request  
 
-<img src="https://httpstatusdogs.com/img/423.jpg" width="50%">
+<img src="https://httpstatusdogs.com/img/423.jpg" width="45%">
 
 ## Checklist
 
