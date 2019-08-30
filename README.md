@@ -36,6 +36,10 @@ Unit tests must cover a minimum of 70% of statements, functions, lines and branc
 
 Github project boards were used to organize and prioritize the development of this library.
 
+This library runs by writting on the CLI:   
+node index yourfile.md  
+It will show you a validation for the .md type of file, followed by the links found on your file, each one with the valid URL or URL broken, and the total amount of them. 
+
 ## Dependencies:
 
 Node file system  
@@ -44,27 +48,26 @@ Elintr
 Jest  
 Prettier  
 Chalk  
-Filehound  
-Marked  
+Marked   
 Cheerio  
-
+Request  
 ## Checklist
 
 ### General
 
-- [ ] Can be installed by `npm install --global <azul-de-prusia>/md-links`
+- [✓] Can be installed by `npm install --global <azul-de-prusia>/md-links`
 
 ### `README.md`
 
-- [ ] Contains the flowchart that resolves the problem.
-- [ ] A board with the backlog for the library implementation.
-- [ ] Technical documentation about the library.
-- [ ] Instalation and use guide of the library.
+- [✓] Contains the flowchart that resolves the problem.
+- [✓] A board with the backlog for the library implementation.
+- [✓] Technical documentation about the library.
+- [✓] Instalation and use guide of the library.
 
 ### API `mdLinks(path, opts)`
 
-- [ ] The module exports a function with the expected interface (API).
-- [ ] Implements support to an individual file.
+- [✓] The module exports a function with the expected interface (API).
+- [✓] Implements support to an individual file.
 - [ ] Implements support to directorys.
 - [ ] Implements `options.validate`
 
@@ -77,21 +80,11 @@ Cheerio
 ### CLI
 
 - [ ] Expose executable `md-links` in the path (configured in` package.json`).
-- [ ] It runs without errors / expected output.
-- [ ] Implements `--validate`.
+- [✓] It runs without errors / expected output.
+- [✓] Implements `--validate`.
 - [ ] Implements `--stats`.
 
 
-
-##### `--validate`
-
-Si pasamos la opción `--validate`, el módulo debe hacer una petición HTTP para
-averiguar si el link funciona o no. Si el link resulta en una redirección a una
-URL que responde ok, entonces consideraremos el link como ok.
-
-Por ejemplo:
-
-```sh
 $ md-links ./some/example.md --validate
 ./some/example.md http://algo.com/2/3/ ok 200 Link a algo
 ./some/example.md https://otra-cosa.net/algun-doc.html fail 404 algún doc
